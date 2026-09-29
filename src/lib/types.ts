@@ -1,0 +1,2 @@
+export type Purpose = 'sale' | 'rent'
+export type Listing = { id: string; title: string; description: string; purpose: Purpose; propertyType: string; city: string; township?: string; price: number; currency: string; rentPeriod?: string; bedrooms?: number; bathrooms?: number; area?: number; areaUnit?: string; status?: string; photos: { url: string; caption?: string; isPrimary?: boolean }[]; owner?: { displayName: string; phone?: string }; createdAt: string }
